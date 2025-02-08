@@ -1,0 +1,55 @@
+
+.react-hot-toast {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.toast-error-style,
+.toast-success-style,
+.toast-yellow-style {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    background-clip: padding-box;
+}
+
+.toast-error-style {
+    background-color: #f87171 !important; /* czerwony */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-success-style {
+    background-color: #22c55e !important; /* zielony */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-yellow-style {
+    background-color: #facc15 !important; /* żółty */
+    border: 1px solid #eab308;
+}
+
+
+.toast-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.toast-close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-left: 1rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

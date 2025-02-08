@@ -1,0 +1,53 @@
+.photo-selector-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.photo-selector-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 600px;
+  width: 90%;
+}
+.photo-selector-modal h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.photo-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+.photo-selector-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+.photo-selector-grid img:hover {
+  transform: scale(1.05);
+}
+.close-selector-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.close-selector-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,101 @@
+.album-photos-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.album-photos-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.actions {
+    margin: 20px 0;
+}
+
+.add-photo-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.add-photo-button:hover {
+    background-color: #0077a8;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-card:hover {
+    transform: scale(1.05);
+}
+
+.photo-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.delete-photo-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(244, 67, 54, 0.9);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-photo-button:hover {
+    background-color: rgba(244, 67, 54, 1);
+}
