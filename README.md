@@ -38,7 +38,14 @@ This is a **full-stack blog application** with a backend built in **Java** and a
 - **CSS** (No Bootstrap or Tailwind CSS)
 
 ### Database Setup
+To start the database using Docker, run the following command:
+WINDOWS:
+```sh
+docker run --name blog-db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=blog -p 5432:5432 -d postgres
+```
+
 Before running the application, make sure the database is properly set up. The backend will handle migrations using Flyway.
+
 
 ### How to Run
 #### Backend
