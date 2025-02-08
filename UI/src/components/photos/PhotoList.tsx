@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/albums/AlbumList.css";
-import AlbumCard from "../albums/AlbumCard.tsx"; // Upewnij się, że ten plik istnieje i zawiera właściwe style
+import AlbumCard from "../albums/AlbumCard.tsx";
 
 interface Album {
     id: string;
